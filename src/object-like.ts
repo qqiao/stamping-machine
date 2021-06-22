@@ -1,6 +1,5 @@
 import { ColDef } from "@ag-grid-community/all-modules";
-import { stamp as masterStamp } from "./stamping-machine";
-
+import { stampColumns as masterStamp } from ".";
 
 export const stamp = (field: string, obj: Record<string, any>): ColDef => {
     return <ColDef>{

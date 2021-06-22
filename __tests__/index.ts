@@ -1,8 +1,8 @@
 import { ColDef } from "@ag-grid-community/all-modules";
-import { stamp } from "../src/stamping-machine";
+import { stampColumns } from "../src";
 
 test('Stamping simple string-string objects', () => {
-    expect(stamp({
+    expect(stampColumns({
         key1: 'value1',
         key2: 'value2'
     })).toEqual(<ColDef[]>[
@@ -11,7 +11,7 @@ test('Stamping simple string-string objects', () => {
 });
 
 test('stamping nested objects should result in column spanning', () => {
-    expect(stamp({
+    expect(stampColumns({
         key1: 'value1',
         key2: {
             key21: 'value21',
@@ -28,7 +28,7 @@ test('stamping nested objects should result in column spanning', () => {
 });
 
 test('stamping nested object should apply recurisively', () => {
-    expect(stamp({
+    expect(stampColumns({
         key1: 'value1',
         key2: {
             key21: 'value21',

@@ -2,7 +2,7 @@
   "name": "stamping-machine",
   "version": "0.0.1",
   "description": "Stamping Machine - Taking any object and pressing them into AG-Grid configurations",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": "https://github.com/qqiao/stamping-machine.git",
   "author": "Qian Qiao <qian.qiao@gmail.com>",
   "license": "Apache-2.0",
