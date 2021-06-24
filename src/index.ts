@@ -1,4 +1,5 @@
 import { ColDef, GridOptions } from "@ag-grid-community/all-modules";
+import deepmerge from 'deepmerge';
 import { isNumber, isObjectLike, isString } from "lodash";
 
 import { stamp as stampObjectLike } from './object-like';
@@ -11,15 +12,20 @@ import { stamp as stampString } from './string';
  *
  * @param input exmaple data object as an input template for the function to
  *     analyze
+ * @param baseGridOptions a template GridOptions where default configurations
+ *     are taken from.
  * @returns an AG Grid options object as the baseline for data visualization.
  */
-export const stamp = (input: Record<string, any>): GridOptions | undefined => {
-    return <GridOptions>{
+export const stamp = (input: Record<string, any>,
+    baseGridOptions?: GridOptions): GridOptions | undefined => {
+
+
+    return deepmerge(baseGridOptions || {}, <GridOptions>{
         defaultColDef: <ColDef>{
             pivot: true
         },
         columnDefs: stampColumns(input),
-    };
+    });
 }
 
 export const stampColumns = (input: Record<string, any>): ColDef[] | undefined => {

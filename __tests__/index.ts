@@ -1,5 +1,5 @@
 import { ColDef } from "@ag-grid-community/all-modules";
-import { stampColumns } from "../src";
+import { stamp, stampColumns } from "../src";
 
 test('Stamping simple string-string objects', () => {
     expect(stampColumns({
@@ -68,4 +68,13 @@ test('stamping nested object should apply recurisively', () => {
             ]
         }
     ]);
+});
+
+test('If baseGridOptions is given, its values should be taken', () => {
+    expect(stamp({ key1: 'value1' }, {
+        defaultColDef: { sortable: false }
+    })).toEqual({
+        defaultColDef: { sortable: false, pivot: true },
+        columnDefs: [{ field: 'key1' }]
+    });
 });

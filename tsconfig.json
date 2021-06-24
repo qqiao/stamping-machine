@@ -6,6 +6,7 @@
         "outDir": "dist/",
         "declaration": true,
         "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
         "lib": [
             "es2017",
             "dom",
