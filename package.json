@@ -1,5 +1,5 @@
 {
-  "name": "stamping-machine",
+  "name": "@qqiao/stamping-machine",
   "version": "0.0.1",
   "description": "Stamping Machine - Taking any object and pressing them into AG-Grid configurations",
   "main": "dist/index.js",
@@ -12,11 +12,15 @@
     "@babel/preset-typescript": "^7.14.5",
     "@types/jest": "^26.0.23",
     "@types/lodash": "^4.14.170",
-    "jest": "^27.0.4",
+    "jest": "^27.0.5",
+    "rimraf": "^3.0.2",
     "typescript": "^4.3.4"
   },
   "dependencies": {
     "@ag-grid-community/all-modules": "^25.3.0",
     "lodash": "^4.17.21"
+  },
+  "scripts": {
+    "build": "rimraf dist/ && jest && tsc"
   }
 }
