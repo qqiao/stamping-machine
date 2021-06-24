@@ -17,7 +17,8 @@ export const stamp = (input: Record<string, any>): GridOptions | undefined => {
     return <GridOptions>{
         defaultColDef: <ColDef>{
             pivot: true
-        }
+        },
+        columnDefs: stampColumns(input),
     };
 }
 

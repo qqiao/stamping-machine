@@ -1,6 +1,6 @@
 {
   "name": "@qqiao/stamping-machine",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Stamping Machine - Taking any object and pressing them into AG-Grid configurations",
   "main": "index.js",
   "repository": "https://github.com/qqiao/stamping-machine.git",
