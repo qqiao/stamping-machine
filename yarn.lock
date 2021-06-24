@@ -1561,6 +1561,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@qqiao/stamping-machine@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@qqiao/stamping-machine@workspace:."
+  dependencies:
+    "@ag-grid-community/all-modules": ^25.3.0
+    "@babel/core": ^7.14.6
+    "@babel/preset-env": ^7.14.7
+    "@babel/preset-typescript": ^7.14.5
+    "@types/jest": ^26.0.23
+    "@types/lodash": ^4.14.170
+    jest: ^27.0.5
+    lodash: ^4.17.21
+    rimraf: ^3.0.2
+    typescript: ^4.3.4
+  languageName: unknown
+  linkType: soft
+
 "@sinonjs/commons@npm:^1.7.0":
   version: 1.8.3
   resolution: "@sinonjs/commons@npm:1.8.3"
@@ -4627,23 +4644,6 @@ fsevents@^2.3.2:
   checksum: c86ac08f58d1a9bce3f17946cb2f18268f55f8180f5396ae147deecb4d23cd54f3d27e4a8d3227d525b0f0c89b7f7e839e223851a577136a763ccd7e488440be
   languageName: node
   linkType: hard
-
-"stamping-machine@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "stamping-machine@workspace:."
-  dependencies:
-    "@ag-grid-community/all-modules": ^25.3.0
-    "@babel/core": ^7.14.6
-    "@babel/preset-env": ^7.14.7
-    "@babel/preset-typescript": ^7.14.5
-    "@types/jest": ^26.0.23
-    "@types/lodash": ^4.14.170
-    jest: ^27.0.5
-    lodash: ^4.17.21
-    rimraf: ^3.0.2
-    typescript: ^4.3.4
-  languageName: unknown
-  linkType: soft
 
 "string-length@npm:^4.0.1":
   version: 4.0.2

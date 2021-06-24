@@ -1,1 +1,0 @@
-{"version":3,"file":"object-like.js","sourceRoot":"","sources":["../src/object-like.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,YAAY,IAAI,WAAW,EAAE,MAAM,GAAG,CAAC;AAEhD,MAAM,CAAC,MAAM,KAAK,GAAG,CAAC,KAAa,EAAE,GAAwB,EAAU,EAAE;IACrE,OAAe;QACX,KAAK;QACL,QAAQ,EAAE,WAAW,CAAC,GAAG,CAAC;KAC7B,CAAC;AACN,CAAC,CAAA"}

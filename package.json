@@ -1,11 +1,12 @@
 {
   "name": "@qqiao/stamping-machine",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Stamping Machine - Taking any object and pressing them into AG-Grid configurations",
-  "main": "dist/index.js",
+  "main": "index.js",
   "repository": "https://github.com/qqiao/stamping-machine.git",
   "author": "Qian Qiao <qian.qiao@gmail.com>",
   "license": "Apache-2.0",
+  "private": false,
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@babel/preset-env": "^7.14.7",
@@ -21,6 +22,7 @@
     "lodash": "^4.17.21"
   },
   "scripts": {
-    "build": "rimraf dist/ && jest && tsc"
+    "build": "rimraf dist/ && jest && tsc && cp LICENSE README.md package.json dist/",
+    "dist": "yarn build && cd dist && yarn publish"
   }
 }
