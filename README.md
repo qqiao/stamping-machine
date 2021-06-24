@@ -10,7 +10,7 @@ import { Grid } from 'ag-grid-enterprise';
 import { stamp } from '@qqiao/stamping-machine';
 
 // Fetch data objects from any remote data service
-const myDataObjects = await fetch('http://data.api.com');
+const myDataObjects = await (await fetch('http://data.api.com')).json();
 
 // Use stamping machine to generate the grid options
 const gridOptions = stamp(myDataObjects.[0]?);
